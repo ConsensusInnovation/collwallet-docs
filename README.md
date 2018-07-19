@@ -73,7 +73,7 @@ URI: `coolwallet://signMessage`
 
 URI範例
 
-    coolwallet://signMessage?from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=0xb69342236a2c44e986a6949ad172f9a5b0e7f91f8faaa77ee2e3ce08da727278&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
+    coolwallet://signMessage?from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=Message&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
 
 回傳範例
 ```JSON
