@@ -38,9 +38,8 @@ BODY
 ```
 
 ### 1. 取得錢包位址
-函式簽章: `string[] getAccounts()`  
-回傳: 錢包位址列表  
-URI: `coolwallet://getAccounts`
+URI: `coolwallet://getAccounts`  
+輸出: 錢包位址列表
 
 URI範例
 
@@ -62,9 +61,15 @@ URI範例
 ```
 
 ### 2. 簽署訊息
-函式簽章: `string signMessage(from, data)`  
-回傳: 簽署後結果  
-URI: `coolwallet://signMessage?from={from}&data={data}`
+URI: `coolwallet://signMessage`  
+輸入
+
+|參數|必填|說明|
+|---|---|---|
+|from|O|簽署人地址|
+|data|O|簽署內容|
+
+輸出: 簽署後結果  
 
 URI範例
 
@@ -86,9 +91,8 @@ URI範例
 ```
 
 ### 3. 簽署交易
-函式簽章: `string signTransaction(tx)`  
-回傳: 簽署後Transaction Hash  
-URI: `coolwallet://signTransaction`
+URI: `coolwallet://signTransaction`  
+輸入
 
 |參數|必填|說明|
 |---|---|---|
@@ -99,6 +103,8 @@ URI: `coolwallet://signTransaction`
 |gasPrice||Gas price (wei)|
 |data||交易的Input data|
 |nonce||Nonce|
+
+輸出: 簽署後Transaction Hash  
 
 URI範例
 
