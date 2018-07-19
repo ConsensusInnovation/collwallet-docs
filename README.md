@@ -73,12 +73,13 @@ URI: `coolwallet://?action=signMessage`
 |---|---|---|
 |from|O|簽署人地址|
 |data|O|簽署內容|
+|extra||附加的簽署資訊|
 
 輸出: 簽署後結果  
 
 URI範例
 
-    coolwallet://?action=signMessage&from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=Message&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo&source=JOYSO
+    coolwallet://?action=signMessage&from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=Message&extra=04f062809b244e37e7fdc21d9409469c989c234200000000000000000000000000000000000000000000000000000000000f42400000000000000000000000000000000000000000000000000000b5e620f48000000000000000000000000000000000000000000000000000000000000005b8d85b50643f000a000500007d0012bf0014b9caaf948d058d56b2b4c7008db8bde2&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo&source=JOYSO
 
 回傳範例
 ```JSON
