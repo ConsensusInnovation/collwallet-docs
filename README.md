@@ -16,7 +16,7 @@
 
 將會執行以下URI：
 
-    coolwallet://getAccounts?callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
+    coolwallet://?action=getAccounts&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
 
 然後Coolwallet應該將結果以JSON格式POST到callback URL
 ```
@@ -38,12 +38,12 @@ BODY
 ```
 
 ### 1. 取得錢包位址
-URI: `coolwallet://getAccounts`  
+URI: `coolwallet://?action=getAccounts`  
 輸出: 錢包位址列表
 
 URI範例
 
-    coolwallet://getAccounts?callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
+    coolwallet://?action=getAccounts&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
 
 回傳範例
 ```JSON
@@ -61,7 +61,7 @@ URI範例
 ```
 
 ### 2. 簽署訊息
-URI: `coolwallet://signMessage`  
+URI: `coolwallet://?action=signMessage`  
 輸入
 
 |參數|必填|說明|
@@ -73,7 +73,7 @@ URI: `coolwallet://signMessage`
 
 URI範例
 
-    coolwallet://signMessage?from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=Message&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
+    coolwallet://?action=signMessage&from=0x8c03377931f3ca36154399c5516370bc6d54e81e&data=Message&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
 
 回傳範例
 ```JSON
@@ -91,7 +91,7 @@ URI範例
 ```
 
 ### 3. 簽署交易
-URI: `coolwallet://signTransaction`  
+URI: `coolwallet://?action=signTransaction`  
 輸入
 
 |參數|必填|說明|
@@ -108,7 +108,7 @@ URI: `coolwallet://signTransaction`
 
 URI範例
 
-    coolwallet://signTransaction?from=0x8c03377931f3ca36154399c5516370bc6d54e81e&to=0x7037734b180c44b7041a31666486f81f45860541&value=0xde0b6b3a7640000&gas=0x5208&gasPrice=0xee6b2800&nonce=0x141&data=0x1234&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
+    coolwallet://?action=signTransaction&from=0x8c03377931f3ca36154399c5516370bc6d54e81e&to=0x7037734b180c44b7041a31666486f81f45860541&value=0xde0b6b3a7640000&gas=0x5208&gasPrice=0xee6b2800&nonce=0x141&data=0x1234&callback=https%3A%2F%2Frelay.host%2F%3Fsession%3Dxxx&apiKey=ooo
 
 回傳範例
 ```JSON
@@ -124,4 +124,3 @@ URI範例
   "error": "錯誤訊息"
 }
 ```
-
