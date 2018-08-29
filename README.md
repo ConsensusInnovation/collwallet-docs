@@ -113,7 +113,7 @@ URI: `coolwallet://?action=signTransaction`
 |data||交易的Input data|
 |nonce||Nonce|
 
-輸出: 簽署後Transaction Hash  
+輸出: 簽署後Raw Transaction  
 
 URI範例
 
@@ -122,7 +122,7 @@ URI範例
 回傳範例
 ```JSON
 {
-  "result": "0x8c8bfa46d2a68b7994049653ec24ddd6849ab5e84cba886e527b77ad391ff26e",
+  "result": "0xf86e827f738509502f900082c350947b0db0f1af5920977746c632d107b302b5d669da880354c86135f350008026a0f57dd7cc619adbb3fd57e07063b970d5bba48205baf073dbe67fa32c3ecc06bda079b8ce6d8c59d53ab3e6d081ce48c348593a18e2fc9993e72b4e2023c4c4355e",
   "error": null
 }
 ```
